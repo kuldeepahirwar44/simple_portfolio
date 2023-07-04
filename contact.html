@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <div class="pageControl">
+      <form class="formHeadPage">
+        <h2>GET IN TOUCH</h2>
+
+        <div class="formPage">
+          <input type="text" id="name" name="name" placeholder="Your Name" />
+          <input type="text" id="email" name="email placeholder="Email Id" />
+          <input type="text" id="phone" name="phone" placeholder="Phone no." />
+          <textarea
+            type="text"
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="How can I help you ?"
+          ></textarea>
+          <button type="submit" value="submit">Send</button>
+          <div class="homepage-ctcs">
+            <a href="index.html" class="homepage-ctc" style="--i: 12" ;>Home</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script>
+
+      const form = document.querySelector(".formHeadPage");
+      // const name = document.querySelector('#name')
+      // const email = document.querySelector('#email')
+      // const phone = document.querySelector('#phone')
+      // const message = document.querySelector('#message')
+      // const submit = document.querySelector("submit");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Thank You for get in touch with us !");
+        console.log(
+          "Name:",
+          form.name.value,
+          "Email:",
+          form.email.value,
+          "Phone:",
+          form.phone.value,
+          "Message:",
+          form.message.value
+        );
+      });
+    </script>
+  </body>
+</html>
